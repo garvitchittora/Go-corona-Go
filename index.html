@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GO CORONA GO..</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="shortcut icon" href="logo.png" type="image/png" />
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmqmbPxHorvUxdXkVpAumH6XQq9WuBW1M&libraries=places"></script>
+	<style>
+		::placeholder{
+			font-size: 90%;
+			padding-left: 5%; 
+		}
+	</style>
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />	
+</head>
+<body>
+			
+	<div class='overlay'>
+	    <div class='preloader'>
+	      	<div class='diamond'>
+	       	<span></span>
+	       	<span></span>
+	       	<span></span>
+	      	</div>
+	      	<div class='movement'>
+	       	<span></span>
+	       	<span></span>
+	       	<span></span>
+	     	</div>
+	    </div>
+	    <h1 style="color: red">
+	    	LOADING....
+	    </h1>
+	</div>
+
+	<div id="header">
+		<div id="nav">
+			<a href="index.html" class="link1">
+				<img src="logo.png" id="logo"/>
+			</a>
+			<a href="https://github.com/garvitchittora" id="nav_link1">DEVELOPER</a>
+			<a href="https://www.who.int/" id="nav_link2">WHO</a>
+			<a href="https://pmnrf.gov.in/en/online-donation" id="nav_link3">DONATE</a>
+			<a href="https://www.who.int/health-topics/coronavirus#tab=tab_1" id="host_link">KNOW MORE</a>
+		</div>
+		<div id="welcome_text_div">
+			<p id="welcome_text">Welcome Home</p>
+			<p id="welcome_text_sub">WE WILL FIGHT TOGETHER...</p>
+			<a href="https://www.worldometers.info/coronavirus/" id="welcome_link">COVID CASES</a>
+		</div>
+		<div id="searchbar">
+
+			<input id="where_div" placeholder="  Corona-Survey:  Where you were in 14 days ?">
+			
+			<div style="position: absolute;width: 30%;height: 20px;background-color:#DCDCDC;border-right:0.5px solid grey;border-left:2px solid grey;border-top:2px solid grey;box-sizing: border-box;left:35%;" >	
+			<label for="daterange" style="margin-left: 10%;font-family: sans-serif;color:grey;font-size:15px;">Click Date to input Date</label>
+			</div>
+			<input type="text" name="daterange" style="position: absolute;width: 30%;height: 25px;background-color:#DCDCDC;border-right:0.5px solid grey;left:35%;box-sizing: border-box; margin-top: 20px;color:grey;border-bottom:2px solid grey;border-left:2px solid grey;border-top: 0.5px white"/>	
+			
+			<input class="searchbar_text" id ="guest_div" placeholder="  Guest No  ▼">
+		   	<a href="index.html">
+			   	<div id="search_div">
+					<p id="search_text">Submit</p>
+			    </div>
+			</a>
+				
+		</div>
+	</div>
+	<div id="mid">
+		<div>
+			<p id="mid_heading">We may be apart, but we'll get<br> through this together.</p>
+		</div>
+		<div id="part1">
+			<a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public" class="link1">
+				<img src="pic_16.jpg" id="part_image"/>
+				<p class="mid_text">COVID</p>
+				<p class="mid_para">Advice for the public</p>
+			</a>
+		</div>
+		<div id="part2">
+			<a href="https://covid19.who.int/" class="link1">
+				<img src="pic_15.jpg" id="part_image"/>
+				<p class="mid_text">STATS</p>
+				<p class="mid_para">Coronavirus disease (COVID-19) outbreak situation</p>
+			</a>
+		</div>
+		<div id="part3">
+			<a href="https://www.worldometers.info/coronavirus/coronavirus-symptoms/" class="link1">
+				<img src="pic_17.jpg" id="part_image"/>
+				<p class="mid_text" >SYMPTOMS</p>
+				<p class="mid_para" >COVID-19 have had a wide range of symptoms reported </p>
+			</a>
+		</div>
+	</div>
+	<div id="lower_mid">
+		<div id="lower_mid_heading">READ SOME OF THE BEST ARTICLES</div>
+		<a href="https://www.thenation.com/content/oppart/" id="host_link1">Explore all</a>
+		<p id="lower_mid_sub">Now you can meet people all over the world while trying <br>something new. Join live, interactive video sessions led by <br>expert hosts—all without leaving home.</p>
+		<div id="lower_part1">
+			<a href="https://www.thenation.com/article/society/corona-quot" style="text-decoration: none;">
+				<img src="pic_8.gif" id="part_image"/>
+				<p id="lower_part">
+					Ready To Fight Back?<br><br>GO CORONA GO GONE...
+				</p>
+			</a>
+		</div>
+		<div id="lower_part2">
+			<a href="https://www.thenation.com/article/politics/covidiots-trump-and-kudlow/" style="text-decoration: none;">
+				<img src="pic_6.gif" id="part_image"/>
+				<p id="lower_part">
+					Covidiots: Trump and Kudlow
+				</p>
+			</a>
+		</div>
+		<div id="lower_part3">
+			<a href="https://www.thenation.com/article/society/coronavirus-quotes-part-2/" style="text-decoration: none;">
+				<img src="pic_5.gif" id="part_image"/>
+				<p id="lower_part">
+					One day—it’s like a miracle—it will disappear.
+				</p>
+			</a>
+		</div>
+		<div id="lower_part4">
+			<a href="https://www.thenation.com/article/society/a-plague-upon-our-home/" style="text-decoration: none;">
+				<img src="pic_4.gif" id="part_image"/>
+				<p id="lower_part">
+					A Plague Upon Our Home
+				</p>
+			</a>
+		</div>
+	</div>
+	<div id="bottom">
+		<div id="bottom1">
+			<p id="bottom_heading">
+				About<br>
+			</p>
+			<a href="https://www.who.int/health-topics/coronavirus#tab=tab_1" id="bottom_link">Covid<br><br></a>
+			<a href="https://covid19.who.int/" id="bottom_link">Stats<br><br></a>
+			<a href="https://www.mygov.in/covid-19/?cbps=1" id="bottom_link">News</a>
+		</div>
+		<div id="bottom2">
+			<p id="bottom_heading">
+				MYGOV SOCIAL HUB<br>
+			</p>
+			<a href="https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger.com%2Ft%2FMyGovIndia" id="bottom_link">Messenger<br><br></a>
+			<a href="https://www.facebook.com/MyGovIndia/" id="bottom_link">Facebook<br><br></a>
+			<a href="https://api.whatsapp.com/send?phone=919013353535&text=Hi&source=&data=&app_absent=" id="bottom_link">Whatsapp</a>
+		</div>
+		<div id="bottom3">
+			<p id="bottom_heading">
+				PRECAUTIONS<br>
+			</p>
+			<a href="https://www.worldometers.info/coronavirus/coronavirus-symptoms/" id="bottom_link">Symptoms<br><br></a>
+			<a href="https://www.who.int/health-topics/coronavirus#tab=tab_1" id="bottom_link">Advice<br><br></a>
+			<a href="https://www.mygov.in/covid-19/?cbps=1" id="bottom_link">My Gov<br><br></a>
+		</div>
+		<div id="bottom4">
+			<p id="bottom_heading">
+				Support<br>
+			</p>
+			<a href="https://www.mygov.in/covid-19/?cbps=1" id="bottom_link">Help Centre<br><br></a>
+			<a href="https://pmnrf.gov.in/en/online-donation" id="bottom_link">Donate<br><br></a>
+			<a href="https://covid19.who.int/" id="bottom_link">Stats<br><br></a>
+		</div>
+	</div>
+	<div id="footer">
+		<p><hr id="footer_length"></p>
+		<div id="footer_text_div">
+			<p id="footer_text">© 2020 COVID, Inc. All rights reserved  &nbsp ·Privacy &nbsp ·Terms &nbsp  ·Sitemap &nbsp ·UK Modern Slavery Act &nbsp ·Company details</p>
+		</div>
+		
+		<div id="footer_img_div">
+			<a href="https://www.facebook.com/garvit.chittora.90" class="link">
+				<i class="fa fa-github fa-2x" id="footer_github_image" aria-hidden="true"></i>
+			</a>
+			<a href="https://twitter.com/ChittoraGarvit" class="link">
+				<i class="fa fa-twitter" aria-hidden="true"id="footer_twitter_image" ></i>
+			</a>
+			<a href="https://www.linkedin.com/in/garvit-chittora-62a265170/" class="link">
+				<i class="fa fa-linkedin-square fa-2x" id="footer_linkedin_image" aria-hidden="true"></i>
+			</a>	
+			<a href="https://www.facebook.com/garvit.chittora.90" class="link">
+				<i class="fa fa-facebook" aria-hidden="true" id="footer_fb_image"></i>
+			</a>
+			<a href="https://www.instagram.com/garvit_chittora_07/">
+				<img src="instafi.png" id="footer_insta_image"/>
+			</a>
+		</div>
+		
+	</div>
+	<script type="text/javascript">
+		window.addEventListener("load",function(){
+			const loader=document.querySelector(".overlay");
+			loader.className+=" hidden";
+		});
+		$('input[name="dates"]').daterangepicker();
+
+		$(function() {
+		  	$('input[name="daterange"]').daterangepicker({
+		    opens: 'left'
+		  }, function(start, end, label) {
+		    console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+		  });
+		});
+	</script>
+</body>
+</html>
