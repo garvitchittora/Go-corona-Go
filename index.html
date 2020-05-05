@@ -279,19 +279,21 @@
 
 		function openForm() {
  			document.getElementById("profile").style.display = "block";
+ 			var width = $(window).width();
+			console.log(width);
+			if(width<=768){
+				$("#profile").css("width","40%");
+				$("#profile").css("margin-left","50%")
+			}
+			else{
+				$("#profile").css("width","20%");
+				$("#profile").css("margin-left","75%")
+			}
 		}
 
 		function closeForm() {
 	  		document.getElementById("profile").style.display = "none";
 		}
-		$(document).ready(function(){
-			var width = $(window).width();
-			console.log(width);
-			if(width<=768){
-				$("#profile").css("width","30%");
-				$("#profile").css("margin-left","60%")
-			}
-		})
 		
 
 	</script>
