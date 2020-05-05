@@ -311,8 +311,8 @@ body{
 	
 }
 #logo{
-	height: 130px;
-	width: 130px;
+	height: 100px;
+	width: 100px;
 	margin-top: 20px;
 	margin-left: 27px;
 }
@@ -345,14 +345,23 @@ body{
 #host_link:hover {
 	background-color: rgba(0,0,0,0.5);
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 #nav_link1{
 	display: inline;
 	float: right;
 	text-decoration: none;
 	font-family: sans-serif;
-	color: white;	
+	color: white;
+	background-color: rgba(0,0,0,0);
+	border: 2px solid rgba(0,0,0,0);	
 	margin-right: 100px;
 	padding: 5px;
+	font-size: 15px;
 	margin-top: 20px;
 }
 #nav_link2{
@@ -423,6 +432,52 @@ body{
 	box-sizing: border-box;
 	border-radius: 8px;
 }
+#guest_div1{
+	width: 15%;
+    height: 45px;
+    background-color: #DCDCDC;
+    border: 2px solid grey;
+    float: left;
+    display: inline;
+    box-sizing: border-box;
+}
+#searchbar1{
+	margin-left: 4%;
+	width: 60%;
+	margin-top: 28px;
+	height: 45px;
+	border-radius: 5px;
+	box-sizing: border-box;
+	border-radius: 8px;
+}
+.sticky {
+display: inline;	
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+#where_div1{
+	width: 40%;
+    height: 45px;
+    float: left;
+    display: inline;
+    background-color: #DCDCDC;
+    border: 2px solid grey;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    box-sizing: border-box;
+}
+#search_div1{
+	width: 15%;
+    height: 45px;
+    float: left;
+    display: inline;
+    background: linear-gradient(to right,#ff9933 0%,#800040 100%);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border: 2px solid grey;
+    box-sizing: border-box;
+}
 #where_div{
 	position: absolute;
 	width: 35%;
@@ -432,7 +487,6 @@ body{
 	border-top-left-radius: 8px;
 	border-bottom-left-radius: 8px;
 	box-sizing: border-box;
-
 }
 #guest_div{
 	position: absolute;
@@ -706,11 +760,11 @@ body{
     margin-right: 1.25%;
 }
 #footer_insta_image{
-	height: 20px;
-	width: 20px;
+	height: 30px;
+	width: 30px;
 	float: right;
     display: inline;
-    margin-top: 1%;
+    margin-top: 0.75%;
     margin-right: 1.25%;
 }
 #footer_linkedin_image{

@@ -11,7 +11,9 @@
 			font-size: 90%;
 			padding-left: 5%; 
 		}
+		
 	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
@@ -34,7 +36,7 @@
 	     	</div>
 	    </div>
 	    <h1 style="color: red">
-	    	LOADING....
+	    	GO CORONA GO....
 	    </h1>
 	</div>
 
@@ -43,19 +45,44 @@
 			<a href="index.html" class="link1">
 				<img src="logo.png" id="logo"/>
 			</a>
-			<a href="https://github.com/garvitchittora" id="nav_link1">DEVELOPER</a>
+			<button type="button" class="btn btn-light" id="nav_link1" onclick="openForm()">DEVELOPER</button>
 			<a href="https://www.who.int/" id="nav_link2">WHO</a>
 			<a href="https://pmnrf.gov.in/en/online-donation" id="nav_link3">DONATE</a>
+
 			<a href="https://www.who.int/health-topics/coronavirus#tab=tab_1" id="host_link">KNOW MORE</a>
 		</div>
+
+		<div id="profile" style="width:20%;height: 500px;background-color: red;float:right;border-radius: 10px;z-index: 10;position: fixed; margin-left: 75%;margin-top: -3%;display: none;">
+			<img src="me.jpg"/ style="height: 40%;width: 60%;margin-left: 20%;margin-top: 10%;margin-bottom: 5%; border: 2px solid grey;">
+			<h3 style="margin-left: 15%;">GARVIT CHITTORA<br> &nbsp &nbsp IIIT ALLAHABAD</h3>
+			<h4 style="margin-left:10%;">Web Developer |Competitive Programmer | Tech-lover </h4>	
+			<a href="https://github.com/garvitchittora" class="link" style="margin-left: 10%; text-decoration: none;">
+				<i class="fa fa-github fa-2x"  aria-hidden="true"></i>
+			</a>
+			<a href="https://twitter.com/ChittoraGarvit"class="link" style="margin-left: 8%; text-decoration: none;">
+				<i class="fa fa-twitter fa-2x" aria-hidden="true" ></i>
+			</a>
+			<a href="https://www.linkedin.com/in/garvit-chittora-62a265170/"  class="link" style="margin-left: 8%; text-decoration: none;">
+				<i class="fa fa-linkedin-square fa-2x"  aria-hidden="true"></i>
+			</a>	
+			<a href="https://www.facebook.com/garvit.chittora.90" class="link" style="margin-left: 8%;text-decoration: none;">
+				<i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+			</a>
+			<a href="https://www.instagram.com/garvit_chittora_07/" style="margin-left: 8%; text-decoration: none;">
+				<img src="instafi1.png"/ style="height: 30px;width: 30px;margin-top: 0.75%;">
+			</a>	
+			<button type="button" class="btn btn-success" onclick="closeForm()" style="margin-left: 40%;margin-top: 5%;" >CLOSE</button>
+		</div>
+
 		<div id="welcome_text_div">
 			<p id="welcome_text">Welcome Home</p>
 			<p id="welcome_text_sub">WE WILL FIGHT TOGETHER...</p>
 			<a href="https://www.worldometers.info/coronavirus/" id="welcome_link">COVID CASES</a>
 		</div>
+		
 		<div id="searchbar">
 
-			<input id="where_div" placeholder="  Corona-Survey:  Where you were in 14 days ?">
+			<input id="where_div" placeholder="Survey:Where you were in 14 days?">
 			
 			<div style="position: absolute;width: 30%;height: 20px;background-color:#DCDCDC;border-right:0.5px solid grey;border-left:2px solid grey;border-top:2px solid grey;box-sizing: border-box;left:35%;" >	
 			<label for="daterange" style="margin-left: 10%;font-family: sans-serif;color:grey;font-size:15px;">Click Date to input Date</label>
@@ -71,7 +98,35 @@
 				
 		</div>
 	</div>
-	<div id="mid">
+	<div id="myHeader" style="height: 100px;width:100%;background-color: red;z-index:10;display: none; ">
+		<div style="float: left;display: inline;margin-left: 2%;">
+			<a href="index.html" class="link1">
+				<img src="logo.png" style="width:80px;margin-top: 7%;margin-left: 5%;">
+			</a>
+		</div>
+		<div id="searchbar1" style="float: left;display: inline;">
+
+			<input id="where_div1" placeholder="  Survey:  Where you were in 14 days ?" >
+			
+			<div style="width: 30%;height: 20px;background-color:#DCDCDC;border-right:0.5px solid grey;border-left:2px solid grey;border-top:2px solid grey;box-sizing: border-box;left:35%;float: left;" >	
+				<label for="daterange" style="margin-left: 10%;font-family: sans-serif;color:grey;font-size:15px;">Click Date to input Date</label>
+			</div>
+			<input type="text" name="daterange" style="width: 30%;height: 25px;background-color:#DCDCDC;border-right:0.5px solid grey;box-sizing: border-box; color:grey;float: left;border-bottom:2px solid grey;border-left:2px solid grey;border-top: 0.5px white;margin-top:20px;margin-left:-30%"/>	
+			
+			<input class="searchbar_text" id ="guest_div1" placeholder="  Guest No  ▼">
+		   	<a href="index.html">
+			   	<div id="search_div1">
+					<p id="search_text">Submit</p>
+			    </div>
+			</a>
+				
+		</div>
+		<button  type="button" class="btn btn-light" style="display: inline;float: right;text-decoration: none;font-family: sans-serif;color: white;margin-right: 30px;padding: 5px;margin-top: 33px;background-color: rgba(0,0,0,0);border: 2px solid rgba(0,0,0,0);font-size: 15px;" onclick="openForm()">DEVELOPER</button>
+		
+		<a href="https://pmnrf.gov.in/en/online-donation" style="display: inline;float: right;text-decoration: none;font-family: sans-serif;color: white;margin-right: 30px;padding: 5px;margin-top: 35px;" >DONATE</a>
+	</div>
+
+	<div id="mid" >
 		<div>
 			<p id="mid_heading">We may be apart, but we'll get<br> through this together.</p>
 		</div>
@@ -97,7 +152,7 @@
 			</a>
 		</div>
 	</div>
-	<div id="lower_mid">
+	<div id="lower_mid" >
 		<div id="lower_mid_heading">READ SOME OF THE BEST ARTICLES</div>
 		<a href="https://www.thenation.com/content/oppart/" id="host_link1">Explore all</a>
 		<p id="lower_mid_sub">Now you can meet people all over the world while trying <br>something new. Join live, interactive video sessions led by <br>expert hosts—all without leaving home.</p>
@@ -188,11 +243,12 @@
 				<i class="fa fa-facebook" aria-hidden="true" id="footer_fb_image"></i>
 			</a>
 			<a href="https://www.instagram.com/garvit_chittora_07/">
-				<img src="instafi.png" id="footer_insta_image"/>
+				<img src="instafi1.png" id="footer_insta_image"/>
 			</a>
 		</div>
 		
 	</div>
+		
 	<script type="text/javascript">
 		window.addEventListener("load",function(){
 			const loader=document.querySelector(".overlay");
@@ -207,6 +263,37 @@
 		    console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
 		  });
 		});
+
+		window.onscroll = function() {myFunction()};
+
+		var header = document.getElementById("myHeader");
+		function myFunction() {
+		  if (window.pageYOffset > 600) {
+		    header.classList.add("sticky");
+		    $("#myHeader").css("display","block");
+		  } else {
+		    header.classList.remove("sticky");
+		    $("#myHeader").css("display","none");
+		  }
+		}
+
+		function openForm() {
+ 			document.getElementById("profile").style.display = "block";
+		}
+
+		function closeForm() {
+	  		document.getElementById("profile").style.display = "none";
+		}
+		$(document).ready(function(){
+			var width = $(window).width();
+			console.log(width);
+			if(width<=768){
+				$("#profile").css("width","30%");
+				$("#profile").css("margin-left","60%")
+			}
+		})
+		
+
 	</script>
 </body>
 </html>
