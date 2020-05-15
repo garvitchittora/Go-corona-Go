@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 	<title>GO CORONA GO..</title>
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -13,6 +14,7 @@
 		}
 		
 	</style>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
@@ -52,10 +54,10 @@
 			<a href="https://www.who.int/health-topics/coronavirus#tab=tab_1" id="host_link">KNOW MORE</a>
 		</div>
 
-		<div id="profile" style="width:20%;height: 500px;background-color: red;float:right;border-radius: 10px;z-index: 10;position: fixed; margin-left: 75%;margin-top: -3%;display: none;">
+		<div id="profile" style="width:20%;height: 500px;background: linear-gradient(to right, rgb(146, 23, 77) 9.38%, rgb(228, 29, 92) 88.54%);float:right;border-radius: 10px;z-index: 10;position: fixed; margin-left: 75%;margin-top: -3%;display: none;">
 			<img src="me.jpg"/ style="height: 40%;width: 60%;margin-left: 20%;margin-top: 10%;margin-bottom: 5%; border: 2px solid grey;">
 			<h3 style="margin-left: 15%;">GARVIT CHITTORA<br> &nbsp &nbsp IIIT ALLAHABAD</h3>
-			<h4 style="margin-left:10%;">Web Developer |Competitive Programmer | Tech-lover </h4>	
+			<h4 style="margin-left:15%;">Web Developer |Competitive Programmer | Tech-lover </h4>	
 			<a href="https://github.com/garvitchittora" class="link" style="margin-left: 10%; text-decoration: none;">
 				<i class="fa fa-github fa-2x"  aria-hidden="true"></i>
 			</a>
@@ -98,13 +100,13 @@
 				
 		</div>
 	</div>
-	<div id="myHeader" style="height: 100px;width:100%;background-color: red;z-index:10;display: none; ">
+	<div id="myHeader" style="height: 80px;background: linear-gradient(to right, rgb(146, 23, 77) 9.38%, rgb(228, 29, 92) 88.54%);width:100%;z-index:10;display: none; ">
 		<div style="float: left;display: inline;margin-left: 2%;">
 			<a href="index.html" class="link1">
-				<img src="logo.png" style="width:80px;margin-top: 7%;margin-left: 5%;">
+				<img src="logo.png" style="width:60px;margin-top: 7%;margin-left: 5%;">
 			</a>
 		</div>
-		<div id="searchbar1" style="float: left;display: inline;">
+		<div id="searchbar1" style="float: left;margin-top: 1%;display: inline;">
 
 			<input id="where_div1" placeholder="  Survey:  Where you were in 14 days ?" >
 			
@@ -121,11 +123,10 @@
 			</a>
 				
 		</div>
-		<button  type="button" class="btn btn-light" style="display: inline;float: right;text-decoration: none;font-family: sans-serif;color: white;margin-right: 30px;padding: 5px;margin-top: 33px;background-color: rgba(0,0,0,0);border: 2px solid rgba(0,0,0,0);font-size: 15px;" onclick="openForm()">DEVELOPER</button>
-		
-		<a href="https://pmnrf.gov.in/en/online-donation" style="display: inline;float: right;text-decoration: none;font-family: sans-serif;color: white;margin-right: 30px;padding: 5px;margin-top: 35px;" >DONATE</a>
+		<button  type="button" class="btn btn-light" style="display: inline;float: right;text-decoration: none;font-family: sans-serif;color: white;margin-right: 30px;padding: 5px;margin-top: 20px;background-color: rgba(0,0,0,0);border: 2px solid rgba(0,0,0,0);font-size: 15px;" onclick="openForm()">DEVELOPER</button>
+		<a href="https://pmnrf.gov.in/en/online-donation" style="display: inline;float: right;text-decoration: none;font-family: sans-serif;color: white;margin-right: 30px;padding: 5px;margin-top: 22px;" >DONATE</a>
+		<a href="https://www.who.int/" style="display: inline;float: right;text-decoration: none;font-family: sans-serif;color: white;margin-right: 30px;padding: 5px;margin-top: 22px;" >WHO</a>
 	</div>
-
 	<div id="mid" >
 		<div>
 			<p id="mid_heading">We may be apart, but we'll get<br> through this together.</p>
@@ -279,12 +280,12 @@
 
 		function openForm() {
  			document.getElementById("profile").style.display = "block";
- 			var width = $(window).width();
+ 			var width = $(document).width();
 			console.log(width);
 			if(width<=768){
 				$("#profile").css("width","40%");
 				$("#profile").css("margin-left","50%")
-			}
+			}	
 			else{
 				$("#profile").css("width","20%");
 				$("#profile").css("margin-left","75%")
